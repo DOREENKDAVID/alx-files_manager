@@ -53,7 +53,7 @@ const isValidId = (id) => {
   return true;
 };
 
-export default class FilesController {
+class FilesController {
   /**
    * Uploads a file.
    * @param {Request} req The Express request object.
@@ -304,3 +304,5 @@ export default class FilesController {
     res.status(200).sendFile(absoluteFilePath);
   }
 }
+
+export default FilesController;
